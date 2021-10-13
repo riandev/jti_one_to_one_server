@@ -393,13 +393,8 @@ client.connect((err) => {
               )
               .slice(
                 0,
-                users[user].filter(
-                  (x) => x.answer6 === "yes" || x.answer6 === "no"
-                ).length < 7
-                  ? 7 -
-                      users[user].filter(
-                        (x) => x.answer6 === "yes" || x.answer6 === "no"
-                      ).length
+                users[user].filter((x) => x.answer6 === "yes").length < 7
+                  ? 7 - users[user].filter((x) => x.answer6 === "yes").length
                   : 0
               )
               .map((d) => {
