@@ -94,6 +94,7 @@ client.connect((err) => {
             answer16: answers.ans16,
             answer17: answers.ans17,
             answer18: answers.ans18,
+            remarksQ10: answers.remarksQ10,
             agentID: answers.agentID,
             callDate: answers.callDate,
             callTime: answers.callTime,
